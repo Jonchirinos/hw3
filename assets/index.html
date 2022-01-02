@@ -1,91 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- contains links for css & fonts -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jon's Portfolio</title>
-    <link rel="stylesheet" href="./Assets/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Strait&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-    <!-- header containing logo and links -->
-    <header>
-        <h1><span class="anchor">JC</span></h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#work-projects">Work Projects</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-                <li>
-                    <a href="#resume">Resume</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-
-    <div class="box2">
-        <h1 class="fnt-75 justify p-30">Jon Chirinos</h1>
-
-
-        <!-- Profile Image in the about me -->
-        <img class="center" src="Assets/Portfolio Images/portfolioimg.jpg" alt="portfolio picture">
-
-
-        <span class="about-me" id="about-me">
-
-            <p> Hello & welcome to my page! I'm a 28yr old Web Developer from Chicago, Illinois. My experience in CSS
-                and Javascript is limited but stay tuned to see the improvements throughout the remainder of my time
-                with the Northwestern program. Below are some links where you can view some of the exciting work I have
-                done.
-            </p>
-        </span>
+    <div class="wrapper">
+        <header>
+            <h1>Password Generator</h1>
+        </header>
+        <div class="card">
+            <div class="card-header">
+                <h2>Generate a Password</h2>
+            </div>
+            <div class="card-body">
+                <textarea readonly id="password" placeholder="Your Secure Password"
+                    aria-label="Generated Password"></textarea>
+            </div>
+            <div class="card-footer">
+                <button id="generate" class="btn">Generate Password</button>
+            </div>
+        </div>
     </div>
-
-
-    <!-- list of links -->
-    <nav class="box-row">
-        <ul>
-            <li class="box" id="work-projects">
-                <h2>Work Projects</h2>
-                <a href="https://github.com/Jonchirinos/hw1b" target="_blank">Click Here</a>
-            </li>
-
-
-            <li class="box" id="contact-me">
-                <h2>Contact Me</h2>
-                <a href="https://www.linkedin.com/in/jonathan-chirinos-733550141/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/Jonchirinos" target="_blank">GitHub</a>
-            </li>
-
-
-            <li class="box" id="resume">
-                <h2>Resume</h2>
-                <a href="./Assets/resume.pdf" target="_blank">Click Here</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- links include blank elements to open in new tabs -->
-    </main>
-    <footer>
-        <p>I ❤️ What I Do</p>
-    </footer>
-
-
-
+    <script src="script.js"></script>
 </body>
-
 
 </html>

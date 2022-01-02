@@ -1,6 +1,6 @@
-var generateBtn = document.querySelector("#generate");
+let generateBtn = document.querySelector("#generate");
 // 1b. create array of letters
-let lcLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l"];
+let lcLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "x", "t", "u", "v", "w", "x", "y", "z"];
 // generatePassword
 // return a final password as a string
 function generatePassword() {
@@ -21,8 +21,8 @@ function generatePassword() {
 }
 // Write password to the #password input
 function writePassword() {
-    var password = generatePassword();
-    var passwordText = document.querySelector("#password");
+    let password = generatePassword();
+    let passwordText = document.querySelector("#password");
     passwordText.value = password;
 }
 // Add event listener to generate button
